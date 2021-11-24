@@ -18,6 +18,7 @@ public class TC_LoadPage extends BaseClass {
 
 		LoadPage lp = new LoadPage(driver);
 		lp.ClickContactUs();
+		logger.info("ContactUs");
 	
 		if (driver.getTitle().equals(ContactUsTitle)){
 			Assert.assertTrue(true);
