@@ -8,6 +8,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -26,7 +27,12 @@ public class BaseClass {
 
 	public String URL = re.getApplicationURL();
 	public String ContactUsTitle = re.getTitleContactUs();
+	public String AJBellHomeTitle = re.getTitlehome();
+	public String OurProductsTitle = re.getOurProducts();
+	public String FAFindOutMoreTitle = re.getFAFindOutMore();
 	public static WebDriver driver;
+	
+	
 	 
 	public static Logger logger;
 	
@@ -53,8 +59,14 @@ public class BaseClass {
 			driver = new InternetExplorerDriver();
 		}
 		
+		
+		
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		driver.get(URL );
+		
+
+		logger.info("Page is loaded");
+		driver.manage().window().maximize();
 	}
 	
 	@AfterClass

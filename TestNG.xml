@@ -6,8 +6,12 @@
 
 	<test name="AJBell">
 		<parameter name="browser" value="chrome" />
+		<parameter name="verification" value="financialProfessional" />
 		<classes>
-			<class name="com.demo.testCases.TC_LoadPage" />
+		<!-- <class name="com.demo.testCases.TC_LoadHomePage" /> -->
+			
+			<class name="com.demo.testCases.TC_OurProduct" />
+			
 
 		</classes>
 

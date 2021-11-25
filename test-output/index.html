@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-SeleniumJavaFramework" class="navigator-link">
-              <span class="suite-name border-failed">SeleniumJavaFramework</span>
+              <span class="suite-name border-passed">SeleniumJavaFramework</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-SeleniumJavaFramework" class="hide-methods failed suite-SeleniumJavaFramework"> (hide)</a> <!-- hide-methods failed suite-SeleniumJavaFramework -->
-                      <a href="#" panel-name="suite-SeleniumJavaFramework" class="show-methods failed suite-SeleniumJavaFramework"> (show)</a> <!-- show-methods failed suite-SeleniumJavaFramework -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-SeleniumJavaFramework" class="hide-methods passed suite-SeleniumJavaFramework"> (hide)</a> <!-- hide-methods passed suite-SeleniumJavaFramework -->
+                      <a href="#" panel-name="suite-SeleniumJavaFramework" class="show-methods passed suite-SeleniumJavaFramework"> (show)</a> <!-- show-methods passed suite-SeleniumJavaFramework -->
                     </span>
-                    <div class="method-list-content failed suite-SeleniumJavaFramework">
+                    <div class="method-list-content passed suite-SeleniumJavaFramework">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SeleniumJavaFramework" title="com.demo.testCases.TC_LoadPage" class="method navigator-link" hash-for-method="TC_loadPage">TC_loadPage</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SeleniumJavaFramework" title="com.demo.testCases.TC_OurProduct" class="method navigator-link" hash-for-method="TC_OurProduct(financialProfessional)">TC_OurProduct(financialProfessional)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-SeleniumJavaFramework -->
+                    </div> <!-- method-list-content passed suite-SeleniumJavaFramework -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,26 +119,22 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-SeleniumJavaFramework" class="panel SeleniumJavaFramework">
-          <div class="suite-SeleniumJavaFramework-class-failed">
+          <div class="suite-SeleniumJavaFramework-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.demo.testCases.TC_LoadPage</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.demo.testCases.TC_OurProduct</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC_loadPage">
-                  </a> <!-- TC_loadPage -->
-                  <span class="method-name">TC_loadPage</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at com.demo.testCases.TC_LoadPage.TC_loadPage(TC_LoadPage.java:27)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
+                  <a name="TC_OurProduct(financialProfessional)">
+                  </a> <!-- TC_OurProduct(financialProfessional) -->
+                  <span class="method-name">TC_OurProduct</span>
+                  <span class="parameters">(financialProfessional)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-SeleniumJavaFramework-class-failed -->
+          </div> <!-- suite-SeleniumJavaFramework-class-passed -->
         </div> <!-- panel SeleniumJavaFramework -->
         <div panel-name="test-xml-SeleniumJavaFramework" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -151,8 +147,9 @@
 &lt;suite name=&quot;SeleniumJavaFramework&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;AJBell&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;verification&quot; value=&quot;financialProfessional&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.demo.testCases.TC_LoadPage&quot;/&gt;
+      &lt;class name=&quot;com.demo.testCases.TC_OurProduct&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- AJBell --&gt;
 &lt;/suite&gt; &lt;!-- SeleniumJavaFramework --&gt;
@@ -194,14 +191,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC_loadPage')
-data.setCell(0, 2, 'com.demo.testCases.TC_LoadPage')
-data.setCell(0, 3, 2214);
+data.setCell(0, 1, 'TC_OurProduct')
+data.setCell(0, 2, 'com.demo.testCases.TC_OurProduct')
+data.setCell(0, 3, 14216);
 window.suiteTableData['SeleniumJavaFramework']= { tableData: data, tableDiv: 'times-div-SeleniumJavaFramework'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-SeleniumJavaFramework">
               </div> <!-- times-div-SeleniumJavaFramework -->
             </div> <!-- times-div -->
@@ -227,20 +224,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.demo.testCases.TC_LoadPage</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.demo.testCases.TC_OurProduct</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">TC_loadPage</span>
-                <span class="method-start">14336 ms</span>
+                <span class="method-name">TC_OurProduct(financialProfessional)</span>
+                <span class="method-start">9167 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">close</span>
-                <span class="method-start">16565 ms</span>
+                <span class="method-start">23405 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

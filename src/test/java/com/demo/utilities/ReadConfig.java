@@ -52,5 +52,25 @@ Properties pro;
 	String contactUsTitle=pro.getProperty("ContactUsTitle");
 	return contactUsTitle;
 	}
+	
+	public String getTitlehome()
+	{
+	String AJBellHomeTitle=pro.getProperty("AJBellHomeTitle");
+	return AJBellHomeTitle;
+	}
+	
+	public String getOurProducts()
+	{
+	String ProductsTitle = pro.getProperty("OurProductsTitle");
+	return ProductsTitle;
+	}
+	
+	public String getFAFindOutMore()
+	{
+	String FAFindOutMore = pro.getProperty("FAFindOutMore");
+	return FAFindOutMore;
+	}
+	
+	
 
 }

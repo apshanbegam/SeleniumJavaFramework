@@ -3,14 +3,15 @@
 <suite name="Failed suite [SeleniumJavaFramework]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="AJBell(failed)">
     <parameter name="browser" value="chrome"/>
+    <parameter name="verification" value="financialProfessional"/>
     <classes>
-      <class name="com.demo.testCases.TC_LoadPage">
+      <class name="com.demo.testCases.TC_OurProduct">
         <methods>
           <include name="close"/>
-          <include name="TC_loadPage"/>
+          <include name="TC_OurProduct" invocation-numbers="0"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.demo.testCases.TC_LoadPage -->
+      </class> <!-- com.demo.testCases.TC_OurProduct -->
     </classes>
   </test> <!-- AJBell(failed) -->
 </suite> <!-- Failed suite [SeleniumJavaFramework] -->
